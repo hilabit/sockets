@@ -6,7 +6,7 @@ PORT = 15000
 
 class Echo(protocol.Protocol):
     def dataReceived(self, data):
-        self.transport.write(data)
+        print(data)
 
 
 class EchoFactory(protocol.Factory):
